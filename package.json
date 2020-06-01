@@ -1,6 +1,6 @@
 {
   "name": "passport-faceit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "FACEIT (OAuth) authentication strategies for Passport.",
   "keywords": [
     "passport",

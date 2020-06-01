@@ -30,9 +30,7 @@ var faceitStrategy = require("passport-faceit").Strategy;
 
 passport.use(new faceitStrategy({
     clientID: FACEIT_CLIENT_ID,
-    clientSecret: FACEIT_CLIENT_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/faceit/callback",
-    scope: 'openid profile email'
+    clientSecret: FACEIT_CLIENT_SECRET
   },
   function(accessToken, refreshToken, params, profile, done) {
     const userData = jwt.decode(params.id_token);
@@ -87,8 +85,7 @@ app.use(express.static("./public"));
 
 passport.use(new faceitStrategy({
     clientID: "098f6b-cd4621d-373cade-4e83262-7b4f6f",
-    clientSecret: "4eb20288afaed97e82bde371260db8d8",
-    scope: 'openid profile email'
+    clientSecret: "4eb20288afaed97e82bde371260db8d8"
   },
   function(accessToken, refreshToken, params, profile, done) {
     const userData = jwt.decode(params.id_token);
@@ -127,7 +124,7 @@ app.listen(3000);
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Technoblazed
+Copyright (c) 2018-2020 Technoblazed
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
