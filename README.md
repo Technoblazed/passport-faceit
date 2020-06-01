@@ -88,7 +88,6 @@ app.use(express.static("./public"));
 passport.use(new faceitStrategy({
     clientID: "098f6b-cd4621d-373cade-4e83262-7b4f6f",
     clientSecret: "4eb20288afaed97e82bde371260db8d8",
-    callbackURL: "http://127.0.0.1:3000/auth/faceit/callback",
     scope: 'openid profile email'
   },
   function(accessToken, refreshToken, params, profile, done) {
