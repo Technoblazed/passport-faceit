@@ -1,6 +1,6 @@
 {
   "name": "passport-faceit",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "FACEIT (OAuth) authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -33,7 +33,7 @@
   ],
   "main": "./lib/passport-faceit",
   "dependencies": {
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^8.5.1",
     "passport-oauth2": "git+https://github.com/Technoblazed/passport-oauth2.git",
     "pkginfo": "^0.4.1"
   },
