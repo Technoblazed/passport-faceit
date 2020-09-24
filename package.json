@@ -47,5 +47,8 @@
     }
   ],
   "directories": {},
-  "homepage": "https://github.com/Technoblazed/passport-faceit"
+  "homepage": "https://github.com/Technoblazed/passport-faceit",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
